@@ -1,0 +1,25 @@
+:root {
+    /* color */
+    --color-pink: #f299a9;
+    --color-dark-green: #097368;
+    --color-yellow: #f2b807;
+    --color-right-salmon: #f2cfbb;
+    --color-right-red: #d94f30;
+    --color-black: #000000;
+    /* font-size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+    /* font-weight */
+    --weight-bold: 800;
+    --weight-semi-bold: 600;
+    --wright-regular:400;
+    --weight-thin: 300;
+    /* size */
+}
+
+* {
+    box-sizing: border-box;
+}
