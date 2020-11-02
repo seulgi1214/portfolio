@@ -22,6 +22,8 @@
     --weight-thin: 400;
     /* size */
     --size-border-radius: 4px;
+    /* animation */
+    --animation-duration: 300ms;
 }
 
 * {
@@ -138,11 +140,6 @@ p {
     bottom: -113px;
 }
 
-.home__title,
-.home__description {
-    color: var(--color-white);
-}
-
 .home__contact {
     font-size: var(--font-small);
     font-weight: var(--weight-thin);
@@ -153,3 +150,70 @@ p {
     color: var(--color-white);
 }
 
+/* section */
+
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+} 
+
+/* about */
+
+#about {
+    padding-bottom: 0;
+}
+
+#about p {
+    line-height: 30px;
+}
+
+
+/* stack */
+
+.stack__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 60px 0;
+}
+
+.card__icon {
+    width: 150px;
+    height: 150px;
+    font-size: 70px;
+    line-height: 150px;
+    border: 1px solid var(--color-right-red);
+    color: var(--color-right-red);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card__icon:hover i {
+    color: var(--color-dark-green);
+    transform: rotate(-30deg) scale(1.1);
+}
+
+.card__icon i {
+    transition: var(--animation-duration);
+}
+
+.card__title,
+.card__description {
+    color: var(--color-right-red);
+}
+
+
+/* career */
+
+#career img{
+    margin-top: 60px;
+    width: 400px;
+}
+
+.career__description {
+    color: gray;
+    font-weight: var(--weight-thin);
+    font-size: var(--font-micro);
+}
