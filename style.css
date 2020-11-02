@@ -10,7 +10,7 @@
     --color-black: #000000;
     --color-white: #ffffff;
     /* font-size */
-    --font-large: 48px;
+    --font-large: 42px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-small: 16px;
@@ -42,6 +42,13 @@ a {
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 h1 {
@@ -106,3 +113,43 @@ p {
 .nav__menu__item:hover {
     background-color: var(--color-dark-yellow);
 }
+
+/* home */
+
+#home {
+    background-color: var(--color-yellow);
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.home__avatar {
+    width: 400px;
+    height: 400px;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+}
+
+.home__image {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    bottom: -113px;
+}
+
+.home__title,
+.home__description {
+    color: var(--color-white);
+}
+
+.home__contact {
+    font-size: var(--font-small);
+    font-weight: var(--weight-thin);
+    margin: 30px;
+    padding: 15px;
+    border: 2px solid var(--color-white);
+    border-radius: var(--size-border-radius);
+    color: var(--color-white);
+}
+
