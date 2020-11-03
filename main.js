@@ -38,7 +38,14 @@ arrowUp.addEventListener('click', () => {
 });
 
 
+//hamburger버튼 클릭시 숨김메뉴 펼치기
 
+const navToggleBtn = document.querySelector('.nav__toggle-btn');
+const navList = document.querySelector('.nav__menu');
+
+navToggleBtn.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
 
 // 메뉴버튼을 누르면 원하는 위치로 자동 스크롤
 
@@ -46,7 +53,12 @@ const navMenu = document.querySelector('#nav');
 navMenu.addEventListener('click', (event) => {
     const target = event.target;
     const link = target.dataset.link;
-    console.log(link);
+
+    if (link == null) {
+        return;
+    }
+
+    navList.classList.remove('active');
 
     const scrollTo = document.querySelector(link);
     scrollTo.scrollIntoView({ behavior: 'smooth' });

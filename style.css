@@ -111,6 +111,10 @@ p {
     display: flex;
 }
 
+.nav__menu.active {
+    display: flex;
+}
+
 .nav__menu__item {
     padding: 8px 12px;
     margin: 0 4px;
@@ -118,12 +122,9 @@ p {
     border-radius: var(--size-border-radius);
 }
 
-.nav__menu__item.active {
-    border: 1px solid var(--color-white);
-}
-
 .nav__menu__item:hover {
-    background-color: var(--color-dark-yellow);
+    border-radius: var(--size-border-radius);
+    background-color: var(--color-dark-yellow);    
 }
 
 .nav__toggle-btn {
@@ -292,9 +293,10 @@ p {
     display: block;
     position: relative;
     left: 50%;
-    width: 25px;
+    width: 84px;
     height: 2px;
-    margin: 8px 0  0 -12px;
+    transform: translateX(-50%);
+    margin-top: 8px;
     background-color: rgb(219, 219, 219);
 }
 
@@ -367,6 +369,7 @@ p {
     #nav {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-dark-green);
     }
 
     .nav__menu {
