@@ -52,6 +52,7 @@ button {
     cursor: pointer;
     outline: none;
     border: none;
+    padding:0;
 }
 
 h1 {
@@ -99,7 +100,7 @@ p {
 #nav.nav--dark {
     background-color: var(--color-dark-green);
     transition: all var(--animation-duration) ease-in-out;
-    padding: 8px;
+
 }
 
 .nav__logo {
@@ -362,6 +363,15 @@ p {
 
 
 @media screen and (max-width: 768px) { 
+    :root {
+    /* font-size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
+
     .nav__toggle-btn {
         display: block;
     }
@@ -371,6 +381,10 @@ p {
         align-items: flex-start;
         background-color: var(--color-dark-green);
     }
+
+    .section {
+        padding: 40px 16px 16px 16px;
+    } 
 
     .nav__menu {
         width: 100%;
@@ -391,4 +405,14 @@ p {
         position: static;
         margin-top:20px;
     }
+
+    #career img{
+        width: 100%;
+
+    }
+
+    .stack__cards {
+        margin: 0;
+    }
 }
+
