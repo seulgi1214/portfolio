@@ -142,7 +142,7 @@ p {
 
 #home {
     background-color: var(--color-yellow);
-    padding: 120px 40px 40px 40px;
+    padding: 120px 40px;
     text-align: center;
     position: relative;
 }
@@ -168,15 +168,7 @@ p {
     bottom: -113px;
 }
 
-.home__contact {
-    font-size: var(--font-small);
-    font-weight: var(--weight-thin);
-    margin: 30px;
-    padding: 15px;
-    border: 2px solid var(--color-white);
-    border-radius: var(--size-border-radius);
-    color: var(--color-white);
-}
+
 
 /* section */
 
@@ -191,10 +183,6 @@ p {
 }
 
 /* about */
-
-#about {
-    padding-bottom: 0;
-}
 
 #about p {
     line-height: 30px;
@@ -354,6 +342,22 @@ p {
 .contact__rights {
     font-size: var(--font-small);
 }
+
+/* arrowBtn */
+
+.arrow__up{
+    display: none;
+    background-color: var(--color-right-red);
+    color: var(--color-white);
+    font-size: var(--font-medium);
+    border-radius: 50%;
+    padding: 4px 12px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) { 
     .nav__toggle-btn {

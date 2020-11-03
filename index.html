@@ -26,11 +26,12 @@
             <a href="#">SeulGi</a>
         </div>
         <ul class="nav__menu">
-            <li class="nav__menu__item active">Home</li>
-            <li class="nav__menu__item">About</li>
-            <li class="nav__menu__item">Stack</li>
-            <li class="nav__menu__item">Project</li>
-            <li class="nav__menu__item">Contact</li>
+            <li class="nav__menu__item active" data-link="#home">Home</li>
+            <li class="nav__menu__item" data-link="#about">About</li>
+            <li class="nav__menu__item" data-link="#stack">Stack</li>
+            <li class="nav__menu__item" data-link="#career">Career</li>
+            <li class="nav__menu__item" data-link="#project">Project</li>
+            <li class="nav__menu__item" data-link="#contact">Contact</li>
         </ul>
 
         <!-- toggle -->
@@ -38,12 +39,13 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <img class="home__avatar" src="/images/profile.jpg" alt="seulgi's photo">
-        <h1 class="home__title">LEE SEULGI(이슬기)</h1>
-        <h2 class="home__subtitle">I'm frontend engineer</h2>
-        <h3 class="home__description">소통의 힘을 믿는 개발자, 함께 성장하는 사람이 되고싶습니다.</h3>
-        <button class="home__contact">Contact Me</button>
-        <img class="home__image" src="/images/top_img.svg" alt="">
+        <div class="home__container">
+            <img class="home__avatar" src="/images/profile.jpg" alt="seulgi's photo">
+            <h1 class="home__title">LEE SEULGI(이슬기)</h1>
+            <h2 class="home__subtitle">I'm frontend engineer</h2>
+            <h3 class="home__description">소통의 힘을 믿는 개발자, 함께 성장하는 사람이 되고싶습니다.</h3>
+            <img class="home__image" src="/images/top_img.svg" alt="">
+        </div>
     </section>
     <!-- about me -->
     <section id="about" class="section section__container">
@@ -54,6 +56,7 @@
     </section>
     <!-- stack -->
     <section id="stack" class="section section__container">
+        <h1>Stack</h1>
         <div class="stack__cards">
             <div class="card">
                 <div class="card__icon"><i class="fab fa-html5"></i></div>
@@ -77,7 +80,7 @@
         <img src="images/middle_img.svg" alt="">
     </section>
     <!-- project -->
-    <section id="projects" class="section section__container">
+    <section id="project" class="section section__container">
         <h1>Project</h1>
         <div class="work__projects">
             <a href="" class="project" target="blank">
@@ -119,7 +122,10 @@
         </p>
         <img src="/images/bottom_img.svg" alt="">
     </section>
-
+    <!-- arrowUP -->
+    <button class="arrow__up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
